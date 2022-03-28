@@ -10,8 +10,8 @@ let state = {
 
 // Generamos dos numeros aleatorios y generamos una respuesta a la suma de esos numeros.
 function generateRandom(){
-    let random1 = Math.floor(Math.random() * 10 + 1);
-    let random2 = Math.floor(Math.random() * 10 + 1);
+    let random1 = chance.integer({ min: 1, max: 10 });
+    let random2 = chance.integer({ min: 1, max: 10 });
     
     state.primaryNumber.text(random1);
     state.secondaryNumber.text(random2);
