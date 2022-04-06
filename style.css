@@ -5,16 +5,18 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-#canvas{
-    box-sizing:border-box;
+#canvas {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     background: yellow;
     width: 700px;
     height: 300px;
-    margin: 50px auto;
+    margin: auto;
+    margin-bottom: 1em;
     border-radius: 1em;
+    margin-top: 5em;
 }
 
 #primary-number, #secondary-number{
@@ -55,6 +57,7 @@ button{
     background: red;
     color: white;
     border: 1px solid lightgrey;
+    cursor: pointer;
 }
 
 /* Valido invalido */
