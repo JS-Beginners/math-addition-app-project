@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     background: lightskyblue;
+    font-family: 'Roboto', sans-serif;
 }
 
 #canvas{
@@ -11,6 +14,7 @@ body{
     width: 700px;
     height: 300px;
     margin: 50px auto;
+    border-radius: 1em;
 }
 
 #primary-number, #secondary-number{
@@ -37,8 +41,8 @@ body{
     font-size: 40px;
     padding: 5px;
 }
-input{
-    border: solid 2px cyan;
+
+input{    
     width: 150px;
     height: 30px;
     padding-left: 25px;
@@ -53,3 +57,32 @@ button{
     border: 1px solid lightgrey;
 }
 
+/* Valido invalido */
+.valid{
+    box-shadow: 1px 1px 1px 1px rgba(0,255,0,0.4);            
+}
+
+.invalid{
+    box-shadow: 1px 1px 1px 1px rgba(255,0,0,0.4);
+}
+
+.alert {
+    display: block;
+    max-width: 700px;
+    min-height: 100px;    
+    margin: 0 auto;
+    font-size: 2em;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 1em;
+}
+
+.alert.valid{
+    background: green;
+    color: white;
+}
+
+.alert.invalid{
+    background-color: red;
+    color: white;
+}
